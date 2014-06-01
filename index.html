@@ -1,22 +1,32 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>David Björklund</title>
 </head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
 <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
 <link href='http://fonts.googleapis.com/css?family=IM+Fell+Double+Pica' rel='stylesheet' type='text/css'>
 
 <style type="text/css">
+  html {
+    height: 100%;
+  }
+
   body {
     font-family: 'IM Fell Double Pica', serif;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     background: url(https://farm1.staticflickr.com/51/196434777_2b5c9ae170_b.jpg);
     background-size: cover;
     background-position: center center;
-    margin-right: 15px;
-    margin-left: 15px;
+    background-attachment: fixed;
+    margin-right: 1em;
+    margin-left: 1em;
     height: 100%;
   }
 
@@ -24,18 +34,16 @@
     max-width: 480px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 15px;
   }
 
   #box {
     background-color: rgba(256, 256, 256, 0.8);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 1em;
     border-radius: 10px;
   }
 
   img {
-    height: 200px;
+    height: 15em;
     border-radius: 50px;
   }
 
@@ -43,16 +51,12 @@
     color: #FF52A9;
   }
 
-  h1 .green {
-    color: #85c062;
-  }
-
   .fa {
     color: #85c062;
-    font-size: 44px;
+    font-size: 3em;
     transition: all 300ms ease-in-out;
-    padding-left: 11px;
-    padding-right: 11px;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
   }
 
   .first .fa {
@@ -70,7 +74,7 @@
 
   .attribution {
     text-align: right;
-    font-size: 12px;
+    font-size: 0.8em;
     font-style: italic;
   }
 
@@ -78,11 +82,17 @@
     color: black;
   }
 
+  @media (max-width: 400px) {
+    body {
+      font-size: 10px;
+    }
+  }
+
 </style>
 
 <body>
 
-  <div style="height: 15px;"></div>
+  <div style="height: 1em;"></div>
 
   <div id="content">
     <div id="box">
@@ -92,13 +102,13 @@
         Hi! I'm <span class="pink">David Björklund</span>
       </h1>
 
-      <p>
+      <div>
         <a href="https://github.com/kesla/" target="_blank" class="first"><i class="fa fa-github-square"></i></a>
         <a href="http://twitter.com/david_bjorklund" target="_blank"><i class="fa fa-twitter-square"></i></a>
         <a href="http://instagram.com/david_bjorklund" target="_blank"><i class="fa fa-instagram"></i></a>
         <a href="http://se.linkedin.com/in/davidbjorklund/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
         <a href="http://open.spotify.com/user/kesla" target="_blank" class="last"><i class="fa fa-spotify"></i></a>
-      </p>
+      </div>
     </div>
     <div class="attribution">
       Photo by <a href="https://flic.kr/p/imMdv">peterallen</a> under license <a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
