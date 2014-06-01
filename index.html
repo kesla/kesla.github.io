@@ -12,21 +12,23 @@
     font-family: 'IM Fell Double Pica', serif;
     font-size: 20px;
     text-align: center;
-    background: url(./background.jpg);
+    background: url(https://farm1.staticflickr.com/51/196434777_2b5c9ae170_b.jpg);
     background-size: cover;
     background-position: center center;
     margin-right: 15px;
     margin-left: 15px;
-    /*margin-top: 15px;*/
     height: 100%;
   }
 
   #content {
-    background-color: rgba(256, 256, 256, 0.8);
     max-width: 480px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 15px;
+  }
+
+  #box {
+    background-color: rgba(256, 256, 256, 0.8);
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 10px;
@@ -66,6 +68,16 @@
     color: black;
   }
 
+  .attribution {
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  .attribution a, .attribution a:hover {
+    color: black;
+  }
+
 </style>
 
 <body>
@@ -73,19 +85,24 @@
   <div style="height: 15px;"></div>
 
   <div id="content">
-    <img src="https://avatars2.githubusercontent.com/u/74128?s=400">
+    <div id="box">
+      <img src="https://avatars2.githubusercontent.com/u/74128?s=400">
 
-    <h1>
-      Hi! I'm <span class="pink">David Björklund</span>
-    </h1>
+      <h1>
+        Hi! I'm <span class="pink">David Björklund</span>
+      </h1>
 
-    <p>
-      <a href="https://github.com/kesla/" target="_blank" class="first"><i class="fa fa-github-square"></i></a>
-      <a href="http://twitter.com/david_bjorklund" target="_blank"><i class="fa fa-twitter-square"></i></a>
-      <a href="http://instagram.com/david_bjorklund" target="_blank"><i class="fa fa-instagram"></i></a>
-      <a href="http://se.linkedin.com/in/davidbjorklund/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-      <a href="http://open.spotify.com/user/kesla" target="_blank" class="last"><i class="fa fa-spotify"></i></a>
-    </p>
+      <p>
+        <a href="https://github.com/kesla/" target="_blank" class="first"><i class="fa fa-github-square"></i></a>
+        <a href="http://twitter.com/david_bjorklund" target="_blank"><i class="fa fa-twitter-square"></i></a>
+        <a href="http://instagram.com/david_bjorklund" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="http://se.linkedin.com/in/davidbjorklund/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        <a href="http://open.spotify.com/user/kesla" target="_blank" class="last"><i class="fa fa-spotify"></i></a>
+      </p>
+    </div>
+    <div class="attribution">
+      Photo by <a href="https://flic.kr/p/imMdv">peterallen</a> under license <a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
+    </div>
   </div>
 </body>
 </html>
