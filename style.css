@@ -5,7 +5,6 @@ html {
 body {
   font-family: 'Roboto Slab', serif;
   text-align: center;
-  background: url(https://farm1.staticflickr.com/51/196434777_2b5c9ae170_b.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -80,6 +79,7 @@ h1 .name {
 
 body {
   font-size: 13px;
+  background-image: url(medium.jpg);
 }
 
 #content {
@@ -90,6 +90,7 @@ body {
 @media (min-width: 480px) {
   body {
     font-size: 15px;
+    background-image: url(large.jpg);
   }
 
   #content {
