@@ -4,7 +4,6 @@ html {
 
 body {
   font-family: 'Roboto Slab', serif;
-  font-size: 15px;
   text-align: center;
   background: url(https://farm1.staticflickr.com/51/196434777_2b5c9ae170_b.jpg);
   background-size: cover;
@@ -75,6 +74,16 @@ h1 .pink {
 
 .attribution a, .attribution a:hover {
   color: black;
+}
+
+body {
+  font-size: 18px;
+}
+
+@media (max-width: 780px) {
+  body {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 400px) {
