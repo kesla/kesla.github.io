@@ -10,12 +10,19 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  margin-right: 1em;
-  margin-left: 1em;
   height: 100%;
+  width: 100%;
+  display: table;
+}
+
+#container {
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
 }
 
 #content {
+  margin-top: 1em;
   max-width: 480px;
   margin-right: auto;
   margin-left: auto;
