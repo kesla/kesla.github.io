@@ -22,7 +22,6 @@ body {
 
 #content {
   margin-top: 1em;
-  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -39,8 +38,9 @@ img {
   border-radius: 50px;
 }
 
-h1 .pink {
+h1 .name {
   color: #FF52A9;
+  white-space: nowrap;
 }
 
 .fa {
@@ -76,18 +76,32 @@ h1 .pink {
   color: black;
 }
 
+/* media query dependent css here: */
+
 body {
-  font-size: 18px;
+  font-size: 13px;
 }
 
-@media (max-width: 780px) {
+#content {
+  max-width: 300px;
+}
+
+
+@media (min-width: 480px) {
   body {
     font-size: 15px;
   }
+
+  #content {
+    max-width: 390px;
+  }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 780px) {
   body {
-    font-size: 10px;
+    font-size: 18px;
+  }
+  #content {
+    max-width: 480px;
   }
 }
