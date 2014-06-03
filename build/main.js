@@ -76,72 +76,6 @@ ElementClass.prototype.has = function(className) {
 }
 
 },{}],3:[function(require,module,exports){
-// shim for using process in browser
-
-var process = module.exports = {};
-
-process.nextTick = (function () {
-    var canSetImmediate = typeof window !== 'undefined'
-    && window.setImmediate;
-    var canPost = typeof window !== 'undefined'
-    && window.postMessage && window.addEventListener
-    ;
-
-    if (canSetImmediate) {
-        return function (f) { return window.setImmediate(f) };
-    }
-
-    if (canPost) {
-        var queue = [];
-        window.addEventListener('message', function (ev) {
-            var source = ev.source;
-            if ((source === window || source === null) && ev.data === 'process-tick') {
-                ev.stopPropagation();
-                if (queue.length > 0) {
-                    var fn = queue.shift();
-                    fn();
-                }
-            }
-        }, true);
-
-        return function nextTick(fn) {
-            queue.push(fn);
-            window.postMessage('process-tick', '*');
-        };
-    }
-
-    return function nextTick(fn) {
-        setTimeout(fn, 0);
-    };
-})();
-
-process.title = 'browser';
-process.browser = true;
-process.env = {};
-process.argv = [];
-
-function noop() {}
-
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-
-process.binding = function (name) {
-    throw new Error('process.binding is not supported');
-}
-
-// TODO(shtylman)
-process.cwd = function () { return '/' };
-process.chdir = function (dir) {
-    throw new Error('process.chdir is not supported');
-};
-
-},{}],4:[function(require,module,exports){
-(function (process){
 var elementClass = require('element-class')
   , forEach = function (almostArray, callback) {
       for(var i = 0; i < almostArray.length; i++)
@@ -149,11 +83,8 @@ var elementClass = require('element-class')
     }
 
 require('domready')(function () {
-  process.nextTick(function () {
-    forEach(document.querySelectorAll('.fadein'), function (elm) {
-      elementClass(elm).add('run')
-    })
+  forEach(document.querySelectorAll('.fadein'), function (elm) {
+    elementClass(elm).add('run')
   })
 })
-}).call(this,require("1YiZ5S"))
-},{"1YiZ5S":3,"domready":1,"element-class":2}]},{},[4])
+},{"domready":1,"element-class":2}]},{},[3])

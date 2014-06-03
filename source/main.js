@@ -5,9 +5,7 @@ var elementClass = require('element-class')
     }
 
 require('domready')(function () {
-  process.nextTick(function () {
-    forEach(document.querySelectorAll('.fadein'), function (elm) {
-      elementClass(elm).add('run')
-    })
+  forEach(document.querySelectorAll('.fadein'), function (elm) {
+    elementClass(elm).add('run')
   })
 })
