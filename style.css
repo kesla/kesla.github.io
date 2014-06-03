@@ -106,3 +106,46 @@ body {
     max-width: 480px;
   }
 }
+
+
+.fadein1 {
+    -webkit-animation: fadein 0.8s; /* Safari and Chrome */
+       -moz-animation: fadein 0.8s; /* Firefox */
+        -ms-animation: fadein 0.8s; /* Internet Explorer */
+         -o-animation: fadein 0.8s; /* Opera */
+            animation: fadein 0.8s;
+}
+
+.fadein2 {
+    -webkit-animation: fadein 0.8s;
+       -moz-animation: fadein 0.8s;
+        -ms-animation: fadein 0.8s;
+         -o-animation: fadein 0.8s;
+    -webkit-animation-delay: 0.4s;
+       -moz-animation-delay: 0.4s;
+        -ms-animation-delay: 0.4s;
+         -o-animation-delay: 0.4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
