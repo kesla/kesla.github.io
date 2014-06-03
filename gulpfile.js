@@ -2,8 +2,8 @@ var browserify = require('gulp-browserify')
   , gulp = require('gulp')
   , prefix = require('gulp-autoprefixer')
   , paths = {
-        css: './source/*.css'
-      , js: './source/*.js'
+        css: './source/main.css'
+      , js: './source/main.js'
     };
 
 gulp.task('css', function () {
