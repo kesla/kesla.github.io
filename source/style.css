@@ -79,7 +79,7 @@ h1 .name {
 
 body {
   font-size: 13px;
-  background-image: url(medium.jpg);
+  background-image: url(/medium.jpg);
 }
 
 #content {
@@ -90,7 +90,7 @@ body {
 @media (min-width: 480px) {
   body {
     font-size: 15px;
-    background-image: url(large.jpg);
+    background-image: url(/large.jpg);
   }
 
   #content {
