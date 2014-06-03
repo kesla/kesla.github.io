@@ -113,22 +113,21 @@ body {
   opacity: 0;
 }
 
-.delay-0.run {
+.fadein.run {
   animation: fadein 1s;
-  animation-delay: 0.4s;
   animation-fill-mode: forwards;
 }
 
 .delay-1.run {
-  animation: fadein 1s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
 
 .delay-2.run {
-  animation: fadein 1s;
+  animation-delay: 1s;
+}
+
+.delay-3.run {
   animation-delay: 1.5s;
-  animation-fill-mode: forwards;
 }
 
 @keyframes fadein {

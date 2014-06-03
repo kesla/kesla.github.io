@@ -116,31 +116,26 @@ body {
   opacity: 0;
 }
 
-.delay-0.run {
+.fadein.run {
   -webkit-animation: fadein 1s;
   animation: fadein 1s;
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 .delay-1.run {
-  -webkit-animation: fadein 1s;
-  animation: fadein 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .delay-2.run {
-  -webkit-animation: fadein 1s;
-  animation: fadein 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.delay-3.run {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fadein {
