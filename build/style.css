@@ -119,6 +119,8 @@ body {
 .delay-0.run {
   -webkit-animation: fadein 1s;
   animation: fadein 1s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }

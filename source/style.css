@@ -115,6 +115,7 @@ body {
 
 .delay-0.run {
   animation: fadein 1s;
+  animation-delay: 0.4s;
   animation-fill-mode: forwards;
 }
 
