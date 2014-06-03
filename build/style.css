@@ -110,14 +110,25 @@ body {
   }
 }
 
+/* animation madness */
 
-.fadein {
+.fadein1 {
   -webkit-animation: fadein 0.8s;
   animation: fadein 0.8s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.fadein2 {
+  -webkit-animation: fadein 0.8s;
+  animation: fadein 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
   opacity: 0;
 }
 
