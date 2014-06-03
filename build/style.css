@@ -111,24 +111,22 @@ body {
 }
 
 
-.fadein1 {
-            -webkit-animation: fadein 0.8s;
-            animation: fadein 0.8s;
-}
-
-.fadein2 {
-            -webkit-animation: fadein 0.8s;
-            animation: fadein 0.8s;
-            -webkit-animation-delay: 0.4s;
-            animation-delay: 0.4s;
+.fadein {
+  -webkit-animation: fadein 0.8s;
+  animation: fadein 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  0% { opacity: 0; }
+  100%   { opacity: 1; }
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  0% { opacity: 0; }
+  100%   { opacity: 1; }
 }
