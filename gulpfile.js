@@ -1,6 +1,6 @@
 var browserify = require('gulp-browserify')
   , gulp = require('gulp')
-  , prefix = require('gulp-autoprefixer')
+  , myth = require('gulp-myth')
   , paths = {
         css: './source/main.css'
       , js: './source/main.js'
@@ -8,7 +8,7 @@ var browserify = require('gulp-browserify')
 
 gulp.task('css', function () {
   gulp.src(paths.css)
-    .pipe(prefix())
+    .pipe(myth())
     .pipe(gulp.dest('./build'))
 })
 

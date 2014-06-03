@@ -58,7 +58,7 @@ h1 .name {
 }
 
 .last .fa {
-  padding-right: 0
+  padding-right: 0;
 }
 
 .fa:hover {
@@ -74,7 +74,8 @@ h1 .name {
   font-style: italic;
 }
 
-.attribution a, .attribution a:hover {
+.attribution a,
+.attribution a:hover {
   color: black;
 }
 
@@ -88,7 +89,6 @@ body {
 #content {
   max-width: 300px;
 }
-
 
 @media (min-width: 480px) {
   body {
@@ -105,6 +105,7 @@ body {
   body {
     font-size: 18px;
   }
+
   #content {
     max-width: 480px;
   }
@@ -139,11 +140,21 @@ body {
 }
 
 @-webkit-keyframes fadein {
-  0% { opacity: 0; }
-  100%   { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
-  0% { opacity: 0; }
-  100%   { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
