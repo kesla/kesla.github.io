@@ -1,0 +1,31 @@
+/* media query dependent css here: */
+
+body {
+  font-size: 13px;
+  background-image: url(/medium.jpg);
+}
+
+#content {
+  max-width: 300px;
+}
+
+
+@media (min-width: 480px) {
+  body {
+    font-size: 15px;
+    background-image: url(/large.jpg);
+  }
+
+  #content {
+    max-width: 390px;
+  }
+}
+
+@media (min-width: 780px) {
+  body {
+    font-size: 18px;
+  }
+  #content {
+    max-width: 480px;
+  }
+}

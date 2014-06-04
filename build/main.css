@@ -43,6 +43,17 @@ h1 .name {
   white-space: nowrap;
 }
 
+.attribution {
+  text-align: right;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.attribution a,
+.attribution a:hover {
+  color: black;
+}
+
 .fa {
   color: #85c062;
   font-size: 3em;
@@ -66,17 +77,6 @@ h1 .name {
   transition: all 400ms ease-in-out;
   color: black;
   top: -2px;
-}
-
-.attribution {
-  text-align: right;
-  font-size: 0.8em;
-  font-style: italic;
-}
-
-.attribution a,
-.attribution a:hover {
-  color: black;
 }
 
 /* media query dependent css here: */

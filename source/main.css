@@ -42,29 +42,6 @@ h1 .name {
   white-space: nowrap;
 }
 
-.fa {
-  color: #85c062;
-  font-size: 3em;
-  transition: all 300ms ease-in-out;
-  padding-left: 0.25em;
-  padding-right: 0.25em;
-  position: relative;
-}
-
-.first .fa {
-  padding-left: 0;
-}
-
-.last .fa {
-  padding-right: 0
-}
-
-.fa:hover {
-  transition: all 400ms ease-in-out;
-  color: black;
-  top: -2px;
-}
-
 .attribution {
   text-align: right;
   font-size: 0.8em;
@@ -75,62 +52,6 @@ h1 .name {
   color: black;
 }
 
-/* media query dependent css here: */
-
-body {
-  font-size: 13px;
-  background-image: url(/medium.jpg);
-}
-
-#content {
-  max-width: 300px;
-}
-
-
-@media (min-width: 480px) {
-  body {
-    font-size: 15px;
-    background-image: url(/large.jpg);
-  }
-
-  #content {
-    max-width: 390px;
-  }
-}
-
-@media (min-width: 780px) {
-  body {
-    font-size: 18px;
-  }
-  #content {
-    max-width: 480px;
-  }
-}
-
-/* animation madness */
-
-.fadein {
-  opacity: 0;
-}
-
-.fadein.run {
-  animation: fadein 1s;
-  animation-fill-mode: forwards;
-}
-
-.delay-1.run {
-  animation-delay: 0.5s;
-}
-
-.delay-2.run {
-  animation-delay: 1s;
-}
-
-.delay-3.run {
-  animation-delay: 1.5s;
-}
-
-@keyframes fadein {
-  0% { opacity: 0; }
-  100%   { opacity: 1; }
-}
+@import "icons.css";
+@import "media.css";
+@import "fade.css";

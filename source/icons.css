@@ -1,0 +1,23 @@
+
+.fa {
+  color: #85c062;
+  font-size: 3em;
+  transition: all 300ms ease-in-out;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  position: relative;
+}
+
+.first .fa {
+  padding-left: 0;
+}
+
+.last .fa {
+  padding-right: 0
+}
+
+.fa:hover {
+  transition: all 400ms ease-in-out;
+  color: black;
+  top: -2px;
+}

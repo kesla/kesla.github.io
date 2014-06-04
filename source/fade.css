@@ -1,0 +1,27 @@
+/* animation madness */
+
+.fadein {
+  opacity: 0;
+}
+
+.fadein.run {
+  animation: fadein 1s;
+  animation-fill-mode: forwards;
+}
+
+.delay-1.run {
+  animation-delay: 0.5s;
+}
+
+.delay-2.run {
+  animation-delay: 1s;
+}
+
+.delay-3.run {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100%   { opacity: 1; }
+}

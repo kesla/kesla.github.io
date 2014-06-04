@@ -1,26 +1,22 @@
 var browserify = require('gulp-browserify')
   , gulp = require('gulp')
   , myth = require('gulp-myth')
-  , paths = {
-        css: './source/main.css'
-      , js: './source/main.js'
-    };
 
 gulp.task('css', function () {
-  gulp.src(paths.css)
+  gulp.src('./source/main.css')
     .pipe(myth())
     .pipe(gulp.dest('./build'))
 })
 
 gulp.task('js', function () {
-  gulp.src(paths.js)
+  gulp.src('./source/main.js')
     .pipe(browserify())
     .pipe(gulp.dest('./build'))
 })
 
 gulp.task('watch', function () {
-  gulp.watch(paths.css, [ 'css' ])
-  gulp.watch(paths.js, [ 'js' ])
+  gulp.watch('./source/*.css', [ 'css' ])
+  gulp.watch('./source/*.js', [ 'js' ])
 })
 
 gulp.task('default', ['css', 'js', 'watch'])
