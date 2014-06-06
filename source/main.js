@@ -4,6 +4,8 @@ var elementClass = require('element-class')
         callback(almostArray[i])
     }
 
+require('./segment.io')
+
 require('domready')(function () {
   forEach(document.querySelectorAll('.fadein'), function (elm) {
     elementClass(elm).add('run')
