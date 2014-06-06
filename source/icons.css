@@ -1,6 +1,6 @@
 
 .fa {
-  color: #85c062;
+  color: var(--green);
   font-size: 3em;
   transition: all 300ms ease-in-out;
   padding-left: 0.25em;
