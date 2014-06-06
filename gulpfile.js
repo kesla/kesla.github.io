@@ -1,6 +1,7 @@
 var browserify = require('gulp-browserify')
   , gulp = require('gulp')
   , minifyCSS = require('gulp-minify-css')
+  , minifyJs = require('gulp-uglify')
   , myth = require('gulp-myth')
 
 gulp.task('css', function () {
@@ -13,6 +14,7 @@ gulp.task('css', function () {
 gulp.task('js', function () {
   gulp.src('./source/main.js')
     .pipe(browserify())
+    .pipe(minifyJs())
     .pipe(gulp.dest('./build'))
 })
 
