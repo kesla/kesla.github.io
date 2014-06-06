@@ -1,10 +1,12 @@
 var browserify = require('gulp-browserify')
   , gulp = require('gulp')
+  , minifyCSS = require('gulp-minify-css')
   , myth = require('gulp-myth')
 
 gulp.task('css', function () {
   gulp.src('./source/main.css')
     .pipe(myth())
+    .pipe(minifyCSS())
     .pipe(gulp.dest('./build'))
 })
 
