@@ -14,7 +14,9 @@ gulp.task('css', function () {
 gulp.task('js', function () {
   gulp.src('./source/main.js')
     .pipe(browserify())
-    .pipe(minifyJs())
+    .pipe(minifyJs({
+      preserveComments: 'some'
+    }))
     .pipe(gulp.dest('./build'))
 })
 
