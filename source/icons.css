@@ -2,7 +2,7 @@
 .fa {
   color: var(--green);
   font-size: 3em;
-  transition: all 300ms ease-in-out;
+  transition: all 400ms ease;
   padding-left: 0.25em;
   padding-right: 0.25em;
   position: relative;
@@ -17,7 +17,6 @@
 }
 
 .fa:hover {
-  transition: all 400ms ease-in-out;
   color: black;
   top: -2px;
 }

@@ -62,6 +62,19 @@ p {
   letter-spacing: 0.5px;
 }
 
+a, a:active, a:visited, a:hover {
+  text-decoration: none;
+}
+
+a, a:active, a:visited {
+  color: var(--green);
+  transition: all 400ms ease;
+}
+
+a:hover {
+  color: black;
+}
+
 @import "icons.css";
 @import "media.css";
 @import "fade.css";
