@@ -54,6 +54,10 @@ h1 .name {
   color: black;
 }
 
+p {
+  letter-spacing: 0.5px;
+}
+
 @import "icons.css";
 @import "media.css";
 @import "fade.css";
