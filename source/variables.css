@@ -1,7 +1,7 @@
 :root {
   --clickable-color: #FF52A9;
   --clickable-hover-color: color(var(--clickable-color) lightness(82%));
-  --highlight-color: #85c062;
+  --highlight-color: #54A821;
   --image-size: 10em;
   --black: #005;
 }
