@@ -58,7 +58,7 @@ a, a:active, a:visited {
 }
 
 a:hover {
-  color: --clickable-hover-color;
+  color: var(--clickable-hover-color);
 }
 
 @import "icons.css";
