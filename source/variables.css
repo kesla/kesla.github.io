@@ -1,5 +1,5 @@
 :root {
-  --pink: #FF52A9;
-  --green: #85c062;
+  --clickable-color: #FF52A9;
+  --highlight-color: #85c062;
   --image-size: 10em;
 }

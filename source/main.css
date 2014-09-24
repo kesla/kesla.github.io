@@ -34,12 +34,12 @@ img {
 }
 
 h1 .name {
-  color: var(--pink);
+  color: var(--highlight-color);
   white-space: nowrap;
 }
 
-.pink {
-  color: var(--pink);
+.highlight {
+  color: var(--highlight-color);
 }
 
 p {
@@ -51,7 +51,7 @@ a, a:active, a:visited, a:hover {
 }
 
 a, a:active, a:visited {
-  color: var(--green);
+  color: var(--clickable-color);
   transition: all 400ms ease;
 }
 

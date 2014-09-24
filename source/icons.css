@@ -1,6 +1,6 @@
 
 .fa {
-  color: var(--green);
+  color: var(--clickable-color);
   font-size: 3em;
   transition: all 400ms ease;
   padding-left: 0.25em;
