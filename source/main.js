@@ -1,4 +1,5 @@
-var forEach = function (almostArray, callback) {
+var imageLoaded = require('image-loaded')
+  , forEach = function (almostArray, callback) {
       for(var i = 0; i < almostArray.length; i++)
         callback(almostArray[i])
     }
@@ -6,7 +7,17 @@ var forEach = function (almostArray, callback) {
 require('./segment.io')
 
 require('domready')(function () {
-  forEach(document.querySelectorAll('.fadein'), function (elm) {
-    elm.classList.add('run')
-  })
+  var img = document.querySelector('img')
+
+  if (img) {
+    imageLoaded(img, function () {
+      forEach(document.querySelectorAll('.fadein'), function (elm) {
+        elm.classList.add('run')
+      })
+    })
+  } else {
+    forEach(document.querySelectorAll('.fadein'), function (elm) {
+      elm.classList.add('run')
+    })
+  }
 })
