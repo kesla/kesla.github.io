@@ -28,7 +28,7 @@ body {
 }
 
 #box {
-  background-color: rgba(256, 256, 256, 0.8);
+  background-color: rgba(256, 256, 243, 0.5);
   padding: 1em;
   border-radius: 10px;
   border: 1px solid rgba(0,0,0,0.05);
@@ -46,16 +46,6 @@ h1 .name {
 
 .pink {
   color: var(--pink);
-}
-
-.attribution {
-  text-align: right;
-  font-size: 0.8em;
-  font-style: italic;
-}
-
-.attribution a, .attribution a:hover {
-  color: black;
 }
 
 p {
