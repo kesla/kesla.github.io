@@ -27,16 +27,10 @@ body {
   margin-left: auto;
 }
 
-#box {
-  background-color: rgba(256, 256, 243, 0.5);
-  padding: 1em;
-  border-radius: 10px;
-  border: 1px solid rgba(0,0,0,0.05);
-}
-
 img {
-  height: 15em;
-  border-radius: 50px;
+  height: var(--image-size);
+  width: var(--image-size);
+  border-radius: calc(var(--image-size) / 2);
 }
 
 h1 .name {
