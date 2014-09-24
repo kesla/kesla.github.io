@@ -3,4 +3,5 @@
   --clickable-hover-color: color(var(--clickable-color) lightness(82%));
   --highlight-color: #85c062;
   --image-size: 10em;
+  --black: #005;
 }

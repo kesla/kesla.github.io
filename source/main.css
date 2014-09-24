@@ -13,6 +13,7 @@ body {
   height: 100%;
   width: 100%;
   display: table;
+  color: var(--black);
 }
 
 #container {
@@ -31,6 +32,7 @@ img {
   height: var(--image-size);
   width: var(--image-size);
   border-radius: calc(var(--image-size) / 2);
+  border: 1px solid var(--black);
 }
 
 h1 .name {
