@@ -1,11 +1,11 @@
 {
   "dependencies": {
-    "domready": "^1.0.5",
-    "gulp": "^3.7.0",
+    "domready": "^1.0.7",
+    "gulp": "^3.8.8",
     "gulp-browserify": "^0.5.0",
-    "gulp-minify-css": "^0.3.4",
-    "gulp-myth": "^0.3.1",
-    "gulp-uglify": "^0.3.0",
+    "gulp-minify-css": "^0.3.10",
+    "gulp-myth": "^1.0.1",
+    "gulp-uglify": "^1.0.1",
     "image-loaded": "0.0.2"
   }
 }
