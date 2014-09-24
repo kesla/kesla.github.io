@@ -56,9 +56,9 @@ a, a:active, a:visited {
 }
 
 a:hover {
-  color: black;
+  color: --clickable-hover-color;
 }
 
 @import "icons.css";
 @import "media.css";
-@import "fade.css";
+@import "animation.css";

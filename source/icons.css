@@ -17,6 +17,6 @@
 }
 
 .fa:hover {
-  color: black;
+  color: var(--clickable-hover-color);
   top: -2px;
 }
