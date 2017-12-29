@@ -4,6 +4,8 @@ var browserify = require('gulp-browserify')
   , minifyJs = require('gulp-uglify')
   , myth = require('gulp-myth')
 
+// minifyJs.options.output.comments = 'some'
+
 gulp.task('css', function () {
   gulp.src('./source/main.css')
     .pipe(myth())
@@ -14,9 +16,7 @@ gulp.task('css', function () {
 gulp.task('js', function () {
   gulp.src('./source/main.js')
     .pipe(browserify())
-    .pipe(minifyJs({
-      preserveComments: 'some'
-    }))
+    .pipe(minifyJs())
     .pipe(gulp.dest('./build'))
 })
 

@@ -28,14 +28,6 @@ acorn@^4.0.3:
   version "4.0.13"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.13.tgz#105495ae5361d697bd195c825192e1ad7f253787"
 
-align-text@^0.1.1, align-text@^0.1.3:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/align-text/-/align-text-0.1.4.tgz#0cd90a561093f35d0a99256c22b7069433fad117"
-  dependencies:
-    kind-of "^3.0.2"
-    longest "^1.0.1"
-    repeat-string "^1.5.2"
-
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
@@ -340,13 +332,6 @@ caniuse-db@^1.0.30000153, caniuse-db@^1.0.30000214:
   version "1.0.30000784"
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000784.tgz#1be95012d9489c7719074f81aee57dbdffe6361b"
 
-center-align@^0.1.1:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/center-align/-/center-align-0.1.3.tgz#aa0d32629b6ee972200411cbd4461c907bc2b7ad"
-  dependencies:
-    align-text "^0.1.3"
-    lazy-cache "^1.0.3"
-
 chalk@^0.5.0:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-0.5.1.tgz#663b3a648b68b55d04690d49167aa837858f2174"
@@ -383,14 +368,6 @@ clean-css@~3.0.4:
   dependencies:
     commander "2.5.x"
     source-map ">=0.1.43 <0.2"
-
-cliui@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/cliui/-/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
-  dependencies:
-    center-align "^0.1.1"
-    right-align "^0.1.1"
-    wordwrap "0.0.2"
 
 clone-component@~0.2.2:
   version "0.2.2"
@@ -461,7 +438,7 @@ commander@2.5.x:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.5.1.tgz#23c61f6e47be143cc02e7ad4bb1c47f5cd5a2883"
 
-commander@^2.1.0:
+commander@^2.1.0, commander@~2.12.1:
   version "2.12.2"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.12.2.tgz#0f5946c427ed9ec0d91a46bb9def53e54650e555"
 
@@ -547,10 +524,6 @@ dateformat@^1.0.7-1.2.3:
 dateformat@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-2.2.0.tgz#4065e2013cf9fb916ddfd82efb506ad4c6769062"
-
-deap@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/deap/-/deap-1.0.0.tgz#b148bf82430a27699b7483a03eb6b67585bfc888"
 
 debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
@@ -776,7 +749,7 @@ extglob@^2.0.2:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-fancy-log@^1.0.0, fancy-log@^1.1.0:
+fancy-log@^1.1.0:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/fancy-log/-/fancy-log-1.3.2.tgz#f41125e3d84f2e7d89a43d06d958c8f78be16be1"
   dependencies:
@@ -992,17 +965,16 @@ gulp-myth@^1.0.1:
     object-assign "^4.0.1"
     through2 "^2.0.0"
 
-gulp-uglify@^1.0.1:
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/gulp-uglify/-/gulp-uglify-1.5.4.tgz#524788d87666d09f9d0c21fb2177f90039a658c9"
+gulp-uglify@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-uglify/-/gulp-uglify-3.0.0.tgz#0df0331d72a0d302e3e37e109485dddf33c6d1ca"
   dependencies:
-    deap "^1.0.0"
-    fancy-log "^1.0.0"
-    gulp-util "^3.0.0"
-    isobject "^2.0.0"
+    gulplog "^1.0.0"
+    has-gulplog "^0.1.0"
+    lodash "^4.13.1"
+    make-error-cause "^1.1.1"
     through2 "^2.0.0"
-    uglify-js "2.6.4"
-    uglify-save-license "^0.4.1"
+    uglify-js "^3.0.5"
     vinyl-sourcemaps-apply "^0.2.0"
 
 gulp-util@^3.0.0, gulp-util@~3.0.1:
@@ -1376,10 +1348,6 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
 
-lazy-cache@^1.0.3:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
-
 lazy-cache@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-2.0.2.tgz#b9190a4f913354694840859f8a8f7084d8822264"
@@ -1591,13 +1559,13 @@ lodash.values@~2.4.1:
   dependencies:
     lodash.keys "~2.4.1"
 
+lodash@^4.13.1:
+  version "4.17.4"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+
 lodash@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-1.0.2.tgz#8f57560c83b59fc270bd3d561b690043430e2551"
-
-longest@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
 
 loud-rejection@^1.0.0:
   version "1.6.0"
@@ -1609,6 +1577,16 @@ loud-rejection@^1.0.0:
 lru-cache@2:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-2.7.3.tgz#6d4524e8b955f95d4f5b58851ce21dd72fb4e952"
+
+make-error-cause@^1.1.1:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/make-error-cause/-/make-error-cause-1.2.2.tgz#df0388fcd0b37816dff0a5fb8108939777dcbc9d"
+  dependencies:
+    make-error "^1.2.0"
+
+make-error@^1.2.0:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/make-error/-/make-error-1.3.2.tgz#8762ffad2444dd8ff1f7c819629fa28e24fea1c4"
 
 make-iterator@^1.0.0:
   version "1.0.0"
@@ -2116,7 +2094,7 @@ repeat-element@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/repeat-element/-/repeat-element-1.1.2.tgz#ef089a178d1483baae4d93eb98b4f9e4e11d990a"
 
-repeat-string@^1.5.2, repeat-string@^1.6.1:
+repeat-string@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/repeat-string/-/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
 
@@ -2227,12 +2205,6 @@ rgb@0.0.1:
 rgb@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/rgb/-/rgb-0.1.0.tgz#be27b291e8feffeac1bd99729721bfa40fc037b5"
-
-right-align@^0.1.1:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/right-align/-/right-align-0.1.3.tgz#61339b722fe6a3515689210d24e14c96148613ef"
-  dependencies:
-    align-text "^0.1.1"
 
 ruglify@~1.0.0:
   version "1.0.0"
@@ -2363,7 +2335,7 @@ source-map@0.1.34:
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@^0.5.1, source-map@^0.5.6, source-map@~0.5.1:
+source-map@^0.5.1, source-map@^0.5.6:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
 
@@ -2378,6 +2350,10 @@ source-map@~0.4.2:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.4.4.tgz#eba4f5da9c0dc999de68032d8b4f76173652036b"
   dependencies:
     amdefine ">=0.0.4"
+
+source-map@~0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
 
 sparkles@^1.0.0:
   version "1.0.0"
@@ -2610,14 +2586,12 @@ typedarray@~0.0.5:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-uglify-js@2.6.4:
-  version "2.6.4"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.6.4.tgz#65ea2fb3059c9394692f15fed87c2b36c16b9adf"
+uglify-js@^3.0.5:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.3.3.tgz#66f9b57f7dda913ad9f48a21b12e4e7377fdaf40"
   dependencies:
-    async "~0.2.6"
-    source-map "~0.5.1"
-    uglify-to-browserify "~1.0.0"
-    yargs "~3.10.0"
+    commander "~2.12.1"
+    source-map "~0.6.1"
 
 uglify-js@~2.2:
   version "2.2.5"
@@ -2634,10 +2608,6 @@ uglify-js@~2.4.0:
     source-map "0.1.34"
     uglify-to-browserify "~1.0.0"
     yargs "~3.5.4"
-
-uglify-save-license@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/uglify-save-license/-/uglify-save-license-0.4.1.tgz#95726c17cc6fd171c3617e3bf4d8d82aa8c4cce1"
 
 uglify-to-browserify@~1.0.0:
   version "1.0.2"
@@ -2817,15 +2787,6 @@ xtend@~2.1.1:
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-2.1.2.tgz#6efecc2a4dad8e6962c4901b337ce7ba87b5d28b"
   dependencies:
     object-keys "~0.4.0"
-
-yargs@~3.10.0:
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-3.10.0.tgz#f7ee7bd857dd7c1d2d38c0e74efbd681d1431fd1"
-  dependencies:
-    camelcase "^1.0.2"
-    cliui "^2.1.0"
-    decamelize "^1.0.0"
-    window-size "0.1.0"
 
 yargs@~3.5.4:
   version "3.5.4"
